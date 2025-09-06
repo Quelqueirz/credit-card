@@ -1,0 +1,84 @@
+/* Importa a fonte "Poppins" do Google Fonts com pesos 300, 400, 500 e 600 */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Aplica estilo global a todos os elementos da página */
+* {
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o espaçamento interno padrão */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura/altura */
+  font-family: "Poppins", sans-serif; /* Define a fonte padrão como Poppins */
+}
+
+/* Estiliza o corpo da página */
+body {
+  min-height: 100vh; /* Garante que o body ocupe pelo menos toda a altura da tela */
+  display: flex; /* Usa Flexbox para alinhar o conteúdo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  background: #e3f2fd; /* Cor de fundo azul claro */
+}
+
+/* Container principal do cartão */
+.container {
+  position: relative; /* Permite posicionamento absoluto de elementos internos */
+  background-image: url("../img/bg.png"); /* Define imagem de fundo do cartão */
+  background-size: cover; /* Faz a imagem cobrir todo o container */
+  padding: 25px; /* Espaçamento interno */
+  border-radius: 28px; /* Bordas arredondadas */
+  max-width: 380px; /* Largura máxima do container */
+  width: 100%; /* Responsivo, ocupa 100% do espaço disponível */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do container */
+}
+
+/* Estiliza o header e o logo com layout flexível */
+header,
+.logo {
+  display: flex; /* Coloca elementos lado a lado */
+  align-items: center; /* Alinha verticalmente ao centro */
+  justify-content: space-between; /* Espaça os elementos para os cantos opostos */
+}
+
+/* Estilo da imagem do logo */
+.logo img {
+  width: 48px; /* Largura da imagem */
+  margin-right: 10px; /* Espaço à direita da imagem */
+}
+
+/* Estilo básico do texto h5 */
+h5 {
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: 400; /* Peso da fonte (regular) */
+  color: #fff; /* Cor branca */
+}
+
+/* Estilo da imagem do chip (simula chip de cartão) */
+header .chip {
+  width: 60px; /* Define a largura do chip */
+}
+
+/* Estilo do texto h6 (geralmente usado para textos pequenos) */
+h6 {
+  color: #fff; /* Cor branca */
+  font-size: 10px; /* Fonte pequena */
+  font-weight: 400; /* Peso regular */
+}
+
+/* Estilo para número do cartão */
+h5.number {
+  margin-top: 4px; /* Espaço acima do número */
+  font-size: 18px; /* Tamanho maior para destaque */
+  letter-spacing: 1px; /* Espaçamento entre caracteres para simular número de cartão */
+}
+
+/* Estilo para o nome do titular */
+h5.name {
+  margin-top: 20px; /* Espaço acima do nome */
+}
+
+/* Estilo da seção de detalhes do cartão (nome, validade etc.) */
+.container .card-details {
+  margin-top: 40px; /* Espaço acima da seção */
+  display: flex; /* Coloca elementos lado a lado */
+  justify-content: space-between; /* Um elemento à esquerda, outro à direita */
+  align-items: flex-end; /* Alinha os itens pela base */
+}
